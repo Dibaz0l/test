@@ -1,32 +1,16 @@
-var money = + prompt('Ваш бюджет', '');
-var name = prompt('Название вашего магазина', '');
-var time = 19;
+let budget = prompt('Какой Ваш бюджет', '');
+let name = prompt('Название вашего магазина?', '');
+
 mainList = {
-    budget: money,
-    shopName: name,
-    shopGoods: [],
-    emploers: {},
-    open: false
+    budjet : budget,
+    name : name,
+    shopGoods : [],
+    employers : {},
+    open
 }
 
-for(let i = 0; i < 5; i++){
-    if((typeof(a)) === 'string' && (typeof(a)) === null && a != '' && a.length < 50){
-        mainList.shopGoods[i] = prompt('Какой тип товара будете продавать');
-    } else {
-        mainList.shopGoods[i] = prompt('Какой тип товара будете продавать');
-    }
-}
+mainList.shopGoods[0] = prompt('Какой товар будете продавать', '');
+mainList.shopGoods[1] = prompt('Какой товар будете продавать', '');
+mainList.shopGoods[2] = prompt('Какой товар будете продавать', '');
 
-if(time < 0){
-    console.log('такого просто не может быть');
-    } else if(time > 8 && time < 20) {
-    console.log('Время работать');
-        } else if(time < 24){
-    console.log('Уже слишком поздно');
-            } else {
-                console.log('В сутках только 24 часа');
-            }
-
-document.write('Бюджет на один день ' + mainList.budget/30);
-console.log(mainList);
-
+document.write('бюджет на 1 день: ' + mainList.budjet/30);
